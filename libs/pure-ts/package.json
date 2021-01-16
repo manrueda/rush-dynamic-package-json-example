@@ -1,0 +1,15 @@
+{
+   "name": "pure-ts",
+   "version": "1.0.0",
+   "license": "MIT",
+   "main": "lib/index.js",
+   "typings": "lib/index.d.ts",
+   "scripts": {
+      "start": "node lib/index.js",
+      "build": "heft build"
+   },
+   "devDependencies": {
+      "@rushstack/heft": "~0.23.2",
+      "typescript": "~4.0.2"
+   }
+}
