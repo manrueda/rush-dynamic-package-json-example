@@ -10,7 +10,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "builder": "rush-angular-tools:ng-packagr",
           "options": {
             "tsConfig": "tsconfig.lib.json",
             "project": "ng-package.json"

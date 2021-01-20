@@ -9,9 +9,10 @@ Angular CLI. Because of how Angular and it's tool-chain works,
 the `dist` folder of the project will have the `package.json` that
 must be distributed and not the one of the root of the project.
 
-To see the result, just run `rush build` and check [libs/angular/dist](libs/angular/dist)
+- The project `rush-angular-tools` it's a Angular Builder project crated with
+to resolve two problems of Angular working with Rush.
+  - Pipe the `stderr` to `stdout` to avoid Rush detecting Angular CLI output as errors
+  - Replacing all the `workspace:*` versions from the produced `package.json` with the
+  version from the real packages in the monorepository.
 
-> NOTE: The build scripts of the Angular project have a `2>&1`.
-> This is a workaround because Angular CLI writes to `stderr` for extra logging
-> and this makes Rush angry. In a real life project we use a custom Angular CLI
-> builder that pipes the stderr to stdout without extra bash magic
+To see the result, just run `rush build` and check [libs/angular/dist](libs/angular/dist)

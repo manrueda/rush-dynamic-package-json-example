@@ -10,7 +10,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve 2>&1",
-    "build": "ng build 2>&1",
+    "build": "ng build --prod",
     "lint": "ng lint 2>&1"
   },
   "peerDependencies": {
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "pure-ts": "workspace:*",
+    "rush-angular-tools": "workspace:*",
     "@angular/animations": "~11.0.9",
     "@angular/common": "~11.0.9",
     "@angular/compiler": "~11.0.9",

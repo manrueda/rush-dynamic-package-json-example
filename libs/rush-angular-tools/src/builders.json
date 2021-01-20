@@ -1,0 +1,9 @@
+{
+   "builders": {
+      "ng-packagr": {
+         "implementation": "./ng-packagr",
+         "schema": "./ng-packagr/schema.json",
+         "description": "Build a library with ng-packagr."
+      }
+   }
+}

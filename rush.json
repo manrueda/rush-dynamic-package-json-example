@@ -121,7 +121,7 @@
    * Specify a SemVer range to ensure developers use a Node.js version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0",
+  "nodeSupportedVersionRange": ">=12.13.0 <15.0.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -447,6 +447,10 @@
     },{
       "packageName": "angular",
       "projectFolder": "libs/angular",
+      "reviewCategory": "libs"
+    },{
+      "packageName": "rush-angular-tools",
+      "projectFolder": "libs/rush-angular-tools",
       "reviewCategory": "libs"
     }
   ]
